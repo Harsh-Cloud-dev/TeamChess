@@ -1,34 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../../CSS/Navbar/Navbar.css";
 
 function Navbar() {
-  const [menuActive, setMenuActive] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
-  };
-
   return (
-    <nav className="navbar">
-      <div className="logo">
-        ♟️ <span>TeamChess</span>
-      </div>
+    <nav className="navbar navbar-expand-lg navbar-dark team-navbar">
+      <div className="container-fluid">
+        <a className="navbar-brand fw-bold logo-text" href="#">
+          ♟️ Team<span>Chess</span>
+        </a>
 
-      <ul className={`nav-links ${menuActive ? "active" : ""}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Play</a></li>
-        <li><a href="#">Tournaments</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Community</a></li>
-      </ul>
+        <button
+          className="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-      <div className="auth-buttons">
-        <button className="login">Login</button>
-        <button className="signup">Sign Up</button>
-      </div>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto gap-3">
+            <li className="nav-item"><a className="nav-link active" href="#">Home</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Play</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Tournaments</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Learn</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Community</a></li>
+          </ul>
 
-      <div className="menu-toggle" onClick={toggleMenu}>
-        ☰
+          <div className="d-flex gap-2">
+            <button className="btn btn-outline-success login-btn">Login</button>
+            <button className="btn btn-success signup-btn">Sign Up</button>
+          </div>
+        </div>
       </div>
     </nav>
   );

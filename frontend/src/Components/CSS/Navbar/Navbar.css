@@ -1,0 +1,100 @@
+/* === TeamChess Navbar === */
+.team-navbar {
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+  box-shadow: 0 4px 25px rgba(0, 255, 136, 0.05);
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.5rem;
+}
+
+.team-navbar:hover {
+  border-bottom: 1px solid rgba(0, 255, 136, 0.6);
+}
+
+/* === Brand === */
+.logo-text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+  letter-spacing: 1px;
+}
+
+.logo-text span {
+  color: #00ff88;
+}
+
+/* === Nav Links === */
+.nav-link {
+  position: relative;
+  color: #d6d6d6 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #00ff88;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00ff88 !important;
+}
+
+/* === Buttons === */
+.login-btn {
+  border-color: #00ff88 !important;
+  color: #00ff88 !important;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.signup-btn {
+  background: linear-gradient(135deg, #00ff88, #00ffaa);
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.3);
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background: #00ff88 !important;
+  color: #000 !important;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: rgba(15, 15, 15, 0.9);
+    border-top: 1px solid rgba(0, 255, 136, 0.3);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 0.6rem 0;
+  }
+
+  .d-flex {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
