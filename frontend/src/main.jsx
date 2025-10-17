@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Navbar from './Components/JSX/Navbar/Navbar'
-import ChessBoard from './Components/JSX/ChessBoard/Board'
+import Navbar from './Components/TopPage/Navbar'
 createRoot(document.getElementById('Navbar')).render(
   <StrictMode>
     <Navbar />
@@ -9,6 +8,15 @@ createRoot(document.getElementById('Navbar')).render(
 )
 createRoot(document.getElementById('MiddlePage')).render(
   <StrictMode>
-    <ChessBoard />
+    <h1>
+      Middle Page
+    </h1>
+  </StrictMode>
+)
+createRoot(document.getElementById('EndPage')).render(
+  <StrictMode>
+    <h1>
+      EndPage
+    </h1>
   </StrictMode>
 )
