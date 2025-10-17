@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Navbar from './Components/TopPage/Navbar'
+import Endpage from './Components/EndPage/Endpage'
 createRoot(document.getElementById('Navbar')).render(
   <StrictMode>
     <Navbar />
@@ -17,6 +18,7 @@ createRoot(document.getElementById('EndPage')).render(
   <StrictMode>
     <h1>
       EndPage
+      <Endpage />
     </h1>
   </StrictMode>
 )

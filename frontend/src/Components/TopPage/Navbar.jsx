@@ -7,7 +7,7 @@ function Navbar(){
   return(
     <>
     <nav className='navbar'>
-      <h1 className='logo'>TeamChess</h1>
+      <h1 className='logo'><ul>TeamChess</ul></h1>
       <div className='hamburger'>
       <Hamburger 
       toggle={setOpen}
