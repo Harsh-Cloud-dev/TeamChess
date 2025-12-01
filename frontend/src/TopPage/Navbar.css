@@ -1,0 +1,31 @@
+.Top-Navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 0;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+/* Styling the dropdown menu */
+.Nav-Menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 60px; /* adjust based on navbar height */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.Nav-Menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.Nav-Menu li:hover {
+    background-color: #eee;
+}
