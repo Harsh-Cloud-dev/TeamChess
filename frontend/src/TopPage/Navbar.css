@@ -1,31 +1,63 @@
-.Top-Navbar {
+/* Main Navbar */
+.top-navbar {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    font-size: xx-large;
-    margin-top: 0;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
+    padding: 15px 40px;
+
+    /* Glassmorphic Background */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    font-size: 1.4rem;
 }
 
-/* Styling the dropdown menu */
-.Nav-Menu {
+/* Logo */
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}
+
+/* Navigation List */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    color: #555;
+}
+
+/* Dropdown (optional) */
+.nav-menu {
     list-style: none;
     padding: 10px;
     margin: 0;
     position: absolute;
-    top: 60px; /* adjust based on navbar height */
+    top: 60px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-.Nav-Menu li {
+.nav-menu li {
     padding: 10px 20px;
     cursor: pointer;
 }
 
-.Nav-Menu li:hover {
+.nav-menu li:hover {
     background-color: #eee;
 }

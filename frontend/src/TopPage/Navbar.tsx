@@ -1,34 +1,17 @@
-import Hamburger from "hamburger-react";
-import { useState } from "react";
 import './Navbar.css';
+
 function Navbar() {
-    const [isOpen,setOpen] = useState(false);
-    return(
-        <div>
-            <nav className="Top-Navbar">
-                <a href="#" className="logo">TeamChess</a>
-                <ul>
-                    <li>Home</li>
-                    <li>Tournament</li>
-                    <li>History</li>
-                    <li>Stats</li>
-                </ul>
-                {/* {For Mobile} */}
-                <div>
-                <Hamburger 
-                toggle={setOpen}
-                toggled={isOpen}
-                />
-                {isOpen && <ul className="Nav-menu">
-                    <li>Home</li>
-                    <li>Tournament</li>
-                    <li>History</li>
-                    <li>Stats</li>
-                </ul>
-                }
-                </div>
-            </nav>
-        </div>
-    )
+    return (
+        <nav className="top-navbar">
+            <a href="#" className="logo">Allina</a>
+            <ul className="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reset</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Stats</a></li>
+            </ul>
+        </nav>
+    );
 }
+
 export default Navbar;
