@@ -10,7 +10,7 @@ A **custom C++ chess engine** is planned and will be integrated soon using **Pyb
 ## 🖼 Application Preview
 
 ### Preview 1
-![Chess GUI Screenshot](pics/chess1.png)
+![Chess GUI Screenshot](pics/Chess1.png)
 
 ### Preview 2
 ![Drag & Drop Preview](pics/Chess2.png)
