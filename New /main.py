@@ -13,7 +13,7 @@ from PyQt6.QtCore import Qt, QRectF, QPointF
 class ChessGUI(QWidget):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("PyQt6 Chess GUI")
+        self.setWindowTitle("Chess GUI")
         self.resize(680, 680)
 
         # Game state
